@@ -1,0 +1,82 @@
+# Project information
+site_name: TDL-SAAS-ARCHIVE
+site_description: Material Design theme blog
+site_author: TwoDragonLake
+site_url: https://github.com/TwoDragonLake/tdl-saas-archive
+
+# Repository
+repo_name: 'TwoDragonLake/tdl-saas-archive'
+repo_url: 'https://github.com/TwoDragonLake/tdl-saas-archive'
+
+# Copyright
+copyright: 'Copyright &copy; 2018 | TwoDragonLake |'
+
+# Configuration
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'pink'
+  logo:
+    icon: 'public'
+    favicon: 'images/favicon.jpg'
+  feature:
+    tabs: true
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/TwoDragonLake'
+    - type: 'home'
+      link: 'http://www.twodragonlake.com'
+
+# google_analytics:
+#   - 'UA-100235665-1'
+#   - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.b64
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+pages:
+  - Home:
+    - 关于: index.md
+    - 如何参与贡献: how-to-contribute.md
+  - TDL-Base:
+    - 关于: base/index.md
+    - 发行说明: base/release-notes.md    
+  - TDL-Tools:
+    - 关于: tools/index.md
+    - 发行说明: tools/release-notes.md       
+  - TDL-Privilege:
+    - 关于: privilege/index.md
+    - 发行说明: privilege/release-notes.md    
+  - TDL-Web-Vue:
+    - 关于: vue/index.md
+    - 发行说明: vue/release-notes.md       
+
+
