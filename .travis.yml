@@ -5,13 +5,13 @@ git:
   depth: false
   
 python:
-  - "3.6"
-  - "nightly"
+  - "3.7.2"
 install:
   - pip install mkdocs
   - pip install mkdocs-material
+  - pip install pymdown-extensions
 script:
-  - mkdocs build
+  - mkdocs build --clean
   - ls
 
 deploy:

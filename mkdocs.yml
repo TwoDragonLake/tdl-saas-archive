@@ -1,25 +1,27 @@
 # Project information
 site_name: TDL-SAAS-ARCHIVE
-site_description: Material Design theme blog
+site_description: TwoDragonLake official docs blog
 site_author: TwoDragonLake
 site_url: https://github.com/TwoDragonLake/tdl-saas-archive
 
 # Repository
-repo_name: 'TwoDragonLake/tdl-saas-archive'
+repo_name: 'tdl-saas-archive'
 repo_url: 'https://github.com/TwoDragonLake/tdl-saas-archive'
+# remove edit button
+edit_uri: ''
 
 # Copyright
-copyright: 'Copyright &copy; 2018 | TwoDragonLake |'
+copyright: 'Copyright &copy; 2018 — 2019 | <a target="_blank" href="https://twodragonlake.github.io" >TwoDragonLake</a> |'
 
 # Configuration
 theme:
   name: 'material'
   palette:
-    primary: 'indigo'
-    accent: 'pink'
-  logo:
+    primary: 'Grey'
+    accent: 'blue'
+  logo: 
     icon: 'public'
-    favicon: 'images/favicon.jpg'
+  favicon: 'assets/images/favicon.ico'
   feature:
     tabs: true
 
@@ -28,6 +30,8 @@ extra:
   social:
     - type: 'github'
       link: 'https://github.com/TwoDragonLake'
+    - type: 'gitlab'
+      link: 'https://gitlab.com/TwoDragonLake'
     - type: 'home'
       link: 'http://www.twodragonlake.com'
 
@@ -52,7 +56,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
+      provider: 'github'
   - pymdownx.mark
   - pymdownx.keys
   - pymdownx.smartsymbols
@@ -78,5 +86,3 @@ pages:
   - TDL-Web-Vue:
     - 关于: vue/index.md
     - 发行说明: vue/release-notes.md       
-
-

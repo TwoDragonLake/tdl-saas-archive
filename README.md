@@ -10,20 +10,30 @@
 	</a>
 </p>
 
+[TwoDragonLake](https://github.com/TwoDragonLake) organization official project docs archive
+
 # Introduction
 Document summary,use mkdocs build
-* [Preview](https://BladeCode.github.io/Material-Docs)
+* [Preview](https://twodragonlake.github.io/tdl-saas-archive)
 * [Mkdocs](http://www.mkdocs.org)
 * [Theme](https://squidfunk.github.io/mkdocs-material)
+
+## Project Branch Structure
+
+```
+tdl-saas-archive
+    ├── gh-pages      	# automatic web source code
+    └── master			# source code (edit branch)
+```
 
 # Preparation
 
 ## Installing Python
 ``` bash
 python --version
-Python 2.7.2
+Python 3.7.2
 pip --version
-pip 1.5.2
+pip 18.1
 ```
 >MkDocs supports Python versions 2.7, 3.3, 3.4, 3.5 and pypy.
 
@@ -39,19 +49,27 @@ pip install mkdocs
 pip install mkdocs-material
 ```
 
-## Getting Started
+## Contribution
 
 ``` bash
-mkdocs new my-project
-cd my-project
+# Get code
+git clone https://github.com/TwoDragonLake/tdl-saas-archive.git
+cd tdl-saas-archive
+# run preview
+mkdocs serve
+# new docs (create a new file in the corresponding directory)，eg：new-docs.md
+# add docs index (Page tree)
+vim mkdocs.yml
+# commit
+git commit -m "eg:specific contents"
+# push
+git push
 ```
 
-## Deploying Pages
-
-``` bash
-mkdocs gh-deploy
-```
->MkDocs will build your docs and use the [ghp-import](https://github.com/davisp/ghp-import) tool to `commit` them to the gh-pages branch and `push` the gh-pages branch to GitHub.
+# Appendix
+* [about manual deployment](https://github.com/davisp/ghp-import)
+* [Automatically build related](https://docs.flc.io/more/github-travis-mkdocs-document)
+* [Automatically build related](http://blog.agenric.cn/2017/12/10/Static-website-automation-build)
 
 # License
 © TwoDragonLake, 2018. Licensed under an [Apache-2](https://github.com/TwoDragonLake/tdl-saas-archive/blob/master/LICENSE) license.
