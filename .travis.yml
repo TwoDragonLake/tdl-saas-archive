@@ -5,7 +5,7 @@ git:
   depth: false
   
 python:
-  - "3.7.2"
+  - "3.6"
 install:
   - pip install mkdocs
   - pip install mkdocs-material
