@@ -14,10 +14,11 @@
 [TDL-SAAS-ARCHIVE](https://github.com/TwoDragonLake/tdl-saas-archive) 是TDL组织官方项目Docs集中归档
 
 ### 规划
+
 前期规划包含多个系统的打通，具体实施过程中可能会有所调整
 
-1. 权限系统
-2. 秒杀系统
+1. 权限系统 :construction:
+2. 秒杀系统 :construction:
 3. 调度系统
 4. CRM系统
 5. SRM系统
@@ -29,6 +30,10 @@
 11. 自动化集群部署系统
 
 ### RoadMap
+* [x] component release
+    * [x] tdl-base 0.0.1
+    * [x] tdl-tools 0.0.1
+    * [ ] ……    
 * [ ] project integration
     * [ ] integration tdl-privilege
     * [ ] integration tdl-web-vue

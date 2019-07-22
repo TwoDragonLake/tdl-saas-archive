@@ -17,7 +17,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 126b35f3692b9ba9f4afb5c95fc6db3860163ed3  # Set in travis-ci.org dashboard, marked secure
+  github-token: ${GH_TOKEN}  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   on:
     branch: master
