@@ -33,7 +33,7 @@ extra:
     - type: 'gitlab'
       link: 'https://gitlab.com/TwoDragonLake'
     - type: 'home'
-      link: 'http://www.twodragonlake.com'
+      link: 'https://twodragonlake.com'
 
 # google_analytics:
 #   - 'UA-100235665-1'

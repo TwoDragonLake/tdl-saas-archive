@@ -1,23 +1,26 @@
-sudo: false
 language: python  
-dist: trusty
-git:
-  depth: false
-  
+
 python:
   - "3.6"
+
 install:
   - pip install mkdocs
   - pip install mkdocs-material
   - pip install pymdown-extensions
-script:
-  - mkdocs build --clean
-  - ls
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: ${GH_TOKEN}  # Set in travis-ci.org dashboard, marked secure
-  keep-history: true
-  on:
-    branch: master
+script:
+  - mkdocs build
+
+after_script:
+  - cp CNAME site/CNAME
+  - cd site
+  - git init
+  - git config user.name "Travis CI"
+  - git config user.email "Jerry.x@outlook.com"
+  - git add .
+  - git commit -m "update by Travis-CI"
+  - git push "https://${GITHUB_TOKEN}@${GITHUB_REF}" master:master
+
+env:
+    global:
+        - GH_REF: github.com/TwoDragonLake/tdl-saas-archive.git
