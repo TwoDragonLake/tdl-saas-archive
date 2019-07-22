@@ -9,7 +9,7 @@ install:
   - pip install pymdown-extensions
 
 script:
-  - mkdocs build
+  - mkdocs build --clean
 
 after_script:
   - cp CNAME site/CNAME
@@ -19,7 +19,7 @@ after_script:
   - git config user.email "Jerry.x@outlook.com"
   - git add .
   - git commit -m "update by Travis-CI"
-  - git push "https://${GITHUB_TOKEN}@${GITHUB_REF}" master:master
+  - git push -f "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 
 env:
     global:

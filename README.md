@@ -3,7 +3,7 @@
 		<img src="https://img.shields.io/pypi/v/mkdocs-material.svg" alt="PyPI">
 	</a>
 	<a href="https://github.com/vuejs/vue">
-		<img src="https://travis-ci.org/BladeCode/Material-Docs.svg?branch=master" alt="docs">
+		<img src="https://travis-ci.com/TwoDragonLake/tdl-saas-archive.svg?branch=master" alt="docs">
 	</a>
 	<a href="https://github.com/BladeCode/Material-Docs/master/LICENSE">
 		<img src="https://img.shields.io/crates/l/rustc-serialize.svg" alt="license">
